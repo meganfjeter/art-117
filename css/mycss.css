@@ -33,7 +33,7 @@ img{
 }
 
 .header-icon{
-	font-size: 50px;
+	
 	color:black;
 	display: flex;
 	width:15%;
@@ -42,35 +42,91 @@ img{
 }
 
 .search{
-	width: 15%;
 	color:black;
+	width: 15%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-/*
+
+.mobilenav{
+	font-size: 50px;
+}
+
 .navlist{
-	width: 100%;
 	height: 100px;
-	display: table;
-	text-align: center;
-	padding: 30px;
+	
+	
+}
+
+.navmenu{
+	list-style-type:none;
+	margin: 0;
+	padding: 0;
+	padding-top: 1%;
+	display: flex;
+	justify-content: space-evenly;
+	align-content: center;
 }
 
 
 nav ul li {	
-	list-style-type: none;
-	display: inline-flex;
-	justify-content: space-evenly;
 	
-	font-size: 35px;
 }
 
 .black{
+
 	color: black;
+	
 }
 
-*/
+
+.menubutton{
+	display: block;
+	padding: 8px;
+	color: black;
+	font-size: 30PX;
+	text-decoration: none;
+	
+}
+
+/*desktop nav switch*/
+
+@media screen and (min-width: 601px) {
+
+	.mobilenav{
+		display: none;
+	}
+}
+
+/*mobile nav switch*/
+
+
+
+@media screen and (max-width: 600px) {
+	.search-icon{
+		display: none;
+	}
+	
+	.cart-icon{
+		display: none;
+	}
+	.profile-icon{
+		display: none;
+	}
+	.navlist{
+		display: none;
+	}
+}
+
+
+
+
+
+
+
+
+
 
 .cary{
 	display: flex;	
